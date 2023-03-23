@@ -1,0 +1,25 @@
+{
+  "name": "mern-jwt-authentication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/americanoame/MERN-JWT-Authentication.git"
+  },
+  "author": "Andre Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/americanoame/MERN-JWT-Authentication/issues"
+  },
+  "homepage": "https://github.com/americanoame/MERN-JWT-Authentication#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.2"
+  }
+}
