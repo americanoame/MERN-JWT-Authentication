@@ -1,18 +1,16 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Register() {
+function Signup() {
 
  const handleSubmit = () => {
 
  }
 
-
   return (
     <div className='row login-style py-5'>
       <div className="d-flex justify-content-center">
         <div className="col-12 col-sm-8 col-lg-6 mx-auto">
-          <h1 className="text-center">SignUp <span className='symbols'>&dArr;</span></h1>
+          <h1 className="text-center">SignUp <span className='symbols'>&#128511;</span></h1>
           <form className='form-style mt-4'>
             <div className='form-group mt-2'>
               <h5>Name</h5>
@@ -53,7 +51,7 @@ function Register() {
   )
 }
 
-export default Register
+export default Signup;
 
 
 // handleSubmit on line 10
