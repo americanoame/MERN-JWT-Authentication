@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Login() {
     return (
@@ -14,15 +15,20 @@ function Login() {
                              Your Email' required />
                         </div>
 
-                         <div className='form-group mt-2'>
-                             <h5>Password</h5>
+                        <div className='form-group mt-2'>
+                            <h5>Password</h5>
                             <input type="password" className='form-control' placeholder='Enter 
                              Your Password' required />
                         </div>
 
-                        
+                        <div>
+                            <button className='mt-2 btn-btn'>Submit</button>
+                        </div>
 
-                 </form>
+                        <span className='sign-up-link'>
+                            If you don't an account! <Link to='/register'>SignUp</Link>
+                        </span>
+                    </form>
                 </div>
             </div>
         </div>

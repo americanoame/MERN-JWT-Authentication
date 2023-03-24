@@ -22,21 +22,64 @@ h2 {
 h1 {
   color: rgb(227, 168, 20);
   font-weight: bolder;
-  
+
 }
 
 .symbols {
   background: #fff;
   padding: 5px;
   border-radius: 100px;
+  color: rgb(219, 100, 100);
+  font-size: 20px;
 }
 
 h5 {
   color: rgb(227, 178, 53);
 }
 
+
 .form-style {
   background: #fff;
   padding: 15px;
 }
 
+.btn-btn {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  background: rgb(227, 178, 53);
+  border: none;
+  padding: 8px 50px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.btn-btn:hover {
+  color: #fff;
+  background: rgb(203, 162, 58);
+  transition: 0.5s;
+}
+
+.sign-up-link {
+ color: rgb(219, 100, 100);
+ text-align: center;
+ font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-btn {
+    padding: 6px 28px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .form-style {
+    margin: 40px;
+  }
+
+  .btn-btn {
+    padding: 4px 22px;
+    font-size: 15px;
+  }
+}
