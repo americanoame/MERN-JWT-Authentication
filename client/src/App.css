@@ -14,40 +14,40 @@ body {
 }
 
 h2 {
-  color: #fff;
+  color: var(--white);
   font-size: 40px;
   text-align: center;
 }
 
 h1 {
-  color: rgb(227, 168, 20);
+  color: var(--gold-ish);
   font-weight: bolder;
 
 }
 
 .symbols {
-  background: #fff;
+  background: var(--white);
   padding: 5px;
   border-radius: 100px;
-  color: rgb(219, 100, 100);
+  color: var(--red-ish);
   font-size: 20px;
 }
 
 h5 {
-  color: rgb(227, 178, 53);
+  color: var(--gold-ish);
 }
 
 
 .form-style {
-  background: #fff;
+  background: var(--white);
   padding: 15px;
 }
 
 .btn-btn {
-  color: #fff;
+  color: var(--white);
   font-size: 18px;
   font-weight: 600;
-  background: rgb(227, 178, 53);
+  background: var(--gold-ish);
   border: none;
   padding: 8px 50px;
   cursor: pointer;
@@ -55,13 +55,13 @@ h5 {
 }
 
 .btn-btn:hover {
-  color: #fff;
-  background: rgb(203, 162, 58);
+  color: var(--white);
+  background: var(gold-flat);
   transition: 0.5s;
 }
 
 .sign-up-link {
- color: rgb(219, 100, 100);
+ color: var(--red-ish);
  text-align: center;
  font-weight: 600;
 }
