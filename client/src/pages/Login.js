@@ -1,8 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-
 function Login() {
+     
+    const onSubmit = () => {
+
+    }
+
     return (
 
         <div className='row login-style py-5'>
@@ -10,20 +14,20 @@ function Login() {
                 <div className="col-12 col-sm-8 col-lg-6 mx-auto">
                     <h1 className="text-center">Login <span className='symbols'>&dArr;</span></h1>
                     <form className='form-style mt-4'>
-                        <div className='form-group mt-2'>
+                        <div className='form-group mt-3'>
                             <h5>email</h5>
                             <input type="email" className='form-control' placeholder='Enter 
                              Your Email' required />
                         </div>
 
-                        <div className='form-group mt-2'>
+                        <div className='form-group mt-3'>
                             <h5>Password</h5>
                             <input type="password" className='form-control' placeholder='Enter 
                              Your Password' required />
                         </div>
 
                         <div>
-                            <button className='mt-2 btn-btn'>Submit</button>
+                            <button className='mt-4 btn-btn'>Submit</button>
                         </div>
 
                         <span className='sign-up-link'>
@@ -39,5 +43,5 @@ function Login() {
 
 export default Login
 
-// onSubmit={loginSubmit}
+// onSubmit={loginSubmit} line 12
 
