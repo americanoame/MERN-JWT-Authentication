@@ -28,20 +28,26 @@ h1 {
 .symbols {
   background: var(--white);
   padding: 5px;
-  border-radius: 100px;
+  border-radius: 70px;
   color: var(--red-ish);
   font-size: 20px;
 }
 
-h5 {
-  color: var(--gold-ish);
-}
-
-
 .form-style {
   background: var(--white);
   padding: 15px;
-  
+
+}
+
+h5 {
+  color: var(--gold-ish);
+  font-size: 18px;
+}
+
+
+.form-control {
+  font-size: 14px;
+
 }
 
 .btn-btn {
@@ -62,10 +68,11 @@ h5 {
 }
 
 .sign-up-link {
- color: var(--red-ish);
- text-align: center;
- font-weight: 600;
+  color: var(--red-ish);
+  text-align: center;
+  font-weight: 600;
 }
+
 
 @media screen and (max-width: 768px) {
   .btn-btn {
@@ -85,4 +92,4 @@ h5 {
   }
 }
 
- /* this is good job */
+/* this is good job */

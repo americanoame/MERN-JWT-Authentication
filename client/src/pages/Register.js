@@ -31,7 +31,7 @@ function Signup() {
             </div>
 
             <div className='form-group mt-4'>
-              <h5>Conform Password</h5>
+              <h5>Confirm Password</h5>
               <input type="password" className='form-control' placeholder=' 
                Conform Password' required />
             </div>

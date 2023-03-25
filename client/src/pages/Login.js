@@ -14,7 +14,7 @@ function Login() {
                     <h1 className="text-center">Login <span className='symbols'>&#128511;</span></h1>
                     <form className='form-style mt-4'>
                         <div className='form-group mt-3'>
-                            <h5>email</h5>
+                            <h5>Email</h5>
                             <input type="email" className='form-control' placeholder='Enter 
                              Your Email' required />
                         </div>
