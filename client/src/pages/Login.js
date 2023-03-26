@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
+import {useForm} from 'react-hook-form'
 
 function Login() {
      
     const onSubmit = () => {
-
+         
     }
 
     return (
@@ -16,13 +17,13 @@ function Login() {
                         <div className='form-group mt-3'>
                             <h5>Email</h5>
                             <input type="email" className='form-control' placeholder='Enter 
-                             Your Email' required />
+                             Your Email' />
                         </div>
 
                         <div className='form-group mt-3'>
                             <h5>Password</h5>
                             <input type="password" className='form-control' placeholder='Enter 
-                             Your Password' required />
+                             Your Password' />
                         </div>
 
                         <div>

@@ -1,5 +1,5 @@
 .login-style {
-  height: 100vh;
+  height: 120vh;
   background-image: url(./images/B.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -73,6 +73,11 @@ h5 {
   font-weight: 600;
 }
 
+.text-danger {
+  font-size: 12px;
+  
+}
+
 
 @media screen and (max-width: 768px) {
   .btn-btn {
@@ -92,4 +97,3 @@ h5 {
   }
 }
 
-/* this is good job */
