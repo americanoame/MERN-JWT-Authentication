@@ -4,12 +4,12 @@ const userSchema = mongoose.Schema({
     user:{
         type: String,
         trim: true,
-        required: trusted
+        required: true
     },
     email: {
         type: String,
         trim: true,
-        required: trusted
+        required: true
     },
     password: {
         type: String,
@@ -17,7 +17,7 @@ const userSchema = mongoose.Schema({
         required: true
     },
     isVerified: {
-        type: BOolean,
+        type: Boolean,
         default: false
     }
 },{
