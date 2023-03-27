@@ -79,6 +79,16 @@ h5 {
 }
 
 
+.form-container {
+  max-width: 500px; /* Set the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
   .btn-btn {
     padding: 6px 28px;

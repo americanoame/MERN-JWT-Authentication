@@ -6,6 +6,21 @@ function Register() {
   const { register, formState: {errors}, handleSubmit,} = useForm();
   const onSubmit = (data) => console.log(data);
 
+   const registerSubmit = async(data) => {
+    if(data.password === data.cpassword) {
+         const userData = {
+           user : data.user,
+           email: data.email,
+           password : data.password
+         }
+         console.log(userData);
+    }else{
+       alert('Password does not match')
+    }
+   }
+
+
+
   return (
     <div className='row login-style py-5'>
       <div className="d-flex justify-content-center">
