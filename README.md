@@ -1,12 +1,13 @@
 # MERN-JWT-Authentication
 
-## 📖 Description
+### 📖 Description
 
-- it is app
+- Coming Soon
  
- ![Screenshot 2023-03-25 at 9 35 27 AM](https://user-images.githubusercontent.com/77306236/227720494-40a760ac-7552-4bee-9d87-372ede5a7b6c.png)
+ ![Screenshot 2023-03-26 at 10 12 55 PM](https://user-images.githubusercontent.com/77306236/227829494-9b0ef6e5-8a8d-40f4-995d-ef33d164a1e9.png)
 
-  ## Table of Contents
+
+  #### Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [License](#License)
@@ -14,26 +15,26 @@
 * [Test](#Test)
 * [Questions](#Questions)
 
-### 🛠 Installation
+#### 🛠 Installation
 
 #### Check the deployed aplication at Heroku:  
 
-## Usage
+#### Usage
 
 
-## ⚖️ License
-#### Covered by MIT License
+##### ⚖️ License
+###### Covered by MIT License
 [MIT License](https://opensource.org/Licenses/MIT)
 
-## Contribution
-#### N/A
+#### Contribution
+###### N/A
 
-## Test
-#### N/A
+#### Test
+##### N/A
 
-## Questions
-### Contact me at: Andrenation@gmail.com
-### Find me on GitHub: https://github.com/americanoame 
+#### Questions
+###### Contact me at: Andrenation@gmail.com
+###### Find me on GitHub: https://github.com/americanoame 
 
 
 
