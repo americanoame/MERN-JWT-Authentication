@@ -85,13 +85,9 @@ h5 {
 }
 
 
-
-
-
-
 @media screen and (max-width: 768px) {
   .btn-btn {
-    padding: 6px 28px;
+    padding: 4px 22px;
     font-size: 15px;
   }
 }

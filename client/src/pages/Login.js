@@ -8,13 +8,10 @@ function Login() {
     // }
 
     return (
-
         <div className='login-style py-5'>
-
-
             <div class="form-container">
                 <form className='form-style mt-4'>
-                <h1 className="text-center">Login <span className='symbols'>&#128275;</span></h1>
+                <h1 className="text-center">Login<span className='symbols'>&#128275;</span></h1>
                     <div class="mb-3">
                         <h5>Email</h5>
                         <input type="email" className='form-control' placeholder='Enter 
@@ -26,7 +23,7 @@ function Login() {
                      Your Password' />
                     </div>
                     <div>
-                        <button className='mt-4 btn-btn'>Submit</button>
+                        <button className='mt-4 btn-btn '>Submit</button>
                     </div>
 
                     <span className='sign-up-link'>
