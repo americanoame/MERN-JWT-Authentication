@@ -28,9 +28,9 @@ function Register() {
 <div class="form-container">
 <form onSubmit={handleSubmit(onSubmit)} className='form-style mt-4'>
     <h1 className="text-center">SignUp<span className='symbols'>&#128275;</span></h1>
-        <div class="mb-3">
+        <div className="mb-3">
         <h5>Name</h5>
-               <input type="name" className='form-control' placeholder='Enter Name'
+               <input type="name" className='form-control b-ground' placeholder='Enter Name'
                  {...register('name',{required: true, minLength: 6})} />
               <error>
                {errors.name?.type && <p className='text-danger mt-1'>Name should be at least 6 characters</p>}
@@ -71,8 +71,8 @@ function Register() {
                </error>
              </div>
         
-             <div>
-               <button className='mt-4 btn-btn'>Submit</button>
+             <div className="d-flex justify-content-center ">
+               <button className='mt-2 btn-btn'>Submit</button>
              </div>
 
              <span className='sign-up-link'>
