@@ -26,7 +26,7 @@ function Register() {
 <div className='login-style py-5'>
 
 <div class="form-container">
-<form onSubmit={handleSubmit(onSubmit)} className='form-style mt-4'>
+ <form onSubmit={handleSubmit(onSubmit)} className='form-style mt-4'>
     <h1 className="text-center">SignUp<span className='symbols'>&#128275;</span></h1>
         <div className="mb-3">
         <h5>Name</h5>
@@ -48,7 +48,7 @@ function Register() {
         </div>
 
         <div className="mb-3">
-        <h5>Password</h5>
+         <h5>Password</h5>
                <input type="password" className='form-control' placeholder=' 
                 Password' {...register('password', {required: true, pattern: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#%&])(?=.{8,})/
                 })} />
@@ -66,7 +66,7 @@ function Register() {
                 })} />
 
                <error>    
-                  {errors.password?.type === 'required' && <p className='text-danger mt-1'>Password must be at least 8 character </p>}
+                  {errors.password?.type === 'required' && <p className='text-danger mt-1'>Password must match with the previous one </p>}
                  {errors.password?.type === 'pattern' && <p className='text-danger mt-1'>Should contain at least one uppercase, lowercase, number and special character</p>}
                </error>
              </div>

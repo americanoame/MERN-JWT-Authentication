@@ -61,13 +61,12 @@ h5 {
   cursor: pointer;
   margin-bottom: 15px;
   border-radius: 5px;
-
-  
+ 
 }
 
 .btn-btn:hover {
   color: var(--white);
-  background: var(gold-flat);
+  background: var(--gold-flat);
   transition: 0.5s;
 }
 
