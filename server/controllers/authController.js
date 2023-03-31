@@ -20,6 +20,23 @@ const registerUser = async (req, res) => {
     }
 }
 
+const loginUser = async (req, res) => {
+ const {email, password} = req.body
+   try {
+    const user = await User.find({email, password})
+    if(user) {
+      return  res.status(200).send({success: true, msg: 'Login successful'})
+    } else{
+        return res.send({success: false, msg: 'Invalid credentials'})
+    }
+   } catch (error) {
+      return res.send(error) 
+   }
+
+
+}
+
 module.exports = {
-    registerUser
+    registerUser,
+    loginUser
 }

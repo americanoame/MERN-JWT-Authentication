@@ -5,7 +5,7 @@ import axios from 'axios'
 function Register() {
 
   const { register, formState: { errors }, handleSubmit, } = useForm();
-  const onSubmit = (data) => console.log(data);
+  // const onSubmit = (data) => console.log(data);
 
   const registerSubmit = async (data) => {
     console.log(data);
@@ -33,7 +33,6 @@ function Register() {
       alert('Password does not match')
     }
   }
-
 
   return (
 
@@ -86,7 +85,7 @@ function Register() {
             </div>
           </div>
 
-          <div className="d-flex justify-content-center ">
+          <div className="d-flex justify-content-center">
             <button className='mt-2 btn-btn'>Submit</button>
           </div>
 
@@ -95,9 +94,7 @@ function Register() {
           </span>
         </form>
       </div>
-
     </div>
-
   )
 }
 
