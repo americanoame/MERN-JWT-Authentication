@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function Register() {
 
@@ -8,22 +11,40 @@ function Register() {
   // const onSubmit = (data) => console.log(data);
 
   const registerSubmit = async (data) => {
-    console.log(data);
+    // console.log(data);
     if (data.password === data.cpassword) {
       const userData = {
         user: data.name,
         email: data.email,
         password: data.password
       }
-      console.log(userData);
+      // console.log(userData);
       await axios.post('auth/register', userData)
         .then(log => {
           if (log.data.success) {
-            alert('User registered successfully')
+            toast.success(log.data.msg, {
+              position: "top-right",
+              autoClose: 3001,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+            });
 
           } else {
 
-            alert('Something went wrong')
+            toast.error(log.data.msg, {
+              position: "top-right",
+              autoClose: 3001,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+            });
           }
         })
         .catch(error => {
@@ -94,6 +115,7 @@ function Register() {
           </span>
         </form>
       </div>
+      <ToastContainer />
     </div>
   )
 }

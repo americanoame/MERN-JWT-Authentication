@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Login() {
 
-    
+
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
@@ -18,21 +20,39 @@ function Login() {
             axios.post('/auth/login', userData)
                 .then(log => {
                     if (log.data.success) {
-                        alert('Login successful')
+                        toast.success(log.data.msg, {
+                            position: "top-right",
+                            autoClose: 3001,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "light",
+                        });
                         // console.log(userData);
                     } else {
-                        alert('Invalid credentials')
+                        toast.error(log.data.msg, {
+                            position: "top-right",
+                            autoClose: 3001,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "light",
+                        });
                     }
                 })
         } catch (error) {
-      console.log(error)
+            console.log(error)
         }
     }
 
     return (
         <div className='login-style py-5'>
             <div className="form-container">
-                <form onSubmit={loginSubmit}className='form-style mt-4'>
+                <form onSubmit={loginSubmit} className='form-style mt-4'>
                     <h1 className="text-center">Login<span className='symbols'>&#128275;</span></h1>
                     <div className="mb-3">
                         <h5>Email</h5>
@@ -54,7 +74,7 @@ function Login() {
                     </span>
                 </form>
             </div>
-
+            <ToastContainer />
         </div>
 
     )
