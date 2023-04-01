@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import React, { useState } from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
@@ -9,7 +9,7 @@ function Login() {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-
+    const navigate = useNavigate()
     const loginSubmit = (e) => {
         e.preventDefault();
         const userData = {
@@ -30,7 +30,8 @@ function Login() {
                             progress: undefined,
                             theme: "light",
                         });
-                        // console.log(userData);
+                        localStorage.setItem('data', JSON.stringify(email))
+                        navigate('/home')
                     } else {
                         toast.error(log.data.msg, {
                             position: "top-right",
